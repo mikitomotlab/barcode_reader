@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>MediaDevices.getUserMedia()</title>
+</head>
+<body>
+
+<button onclick="startVideo()">ビデオ開始！</button>
+
+<button id="take_picture">写真を撮影！</button>
+<img id="myimg"/>
+
+<button onclick="stopVideo()">ビデオ終了！</button>
+
+
+<div id="container">
+	<canvas width="320" height="240" id="picture"></canvas>
+	<p id="textbit"></p>
+	<div class="upload_btn">
+		<input id="Take-Picture" type="file" accept="image/*;capture=camera" />
+	</div>
+</div>
+
+<script src="app_v2.js"></script>
+</body>
+</html>
